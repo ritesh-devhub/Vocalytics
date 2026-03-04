@@ -1,7 +1,7 @@
-# 🎤 SpeakSense AI  
+# 🎤 Vocalytics
 ### Multimodal AI-Powered Speaking Performance Analyzer
 
-SpeakSense AI is an end-to-end multimodal system that evaluates speaking performance from recorded videos using **Computer Vision, Audio Signal Processing, and NLP**.
+Vocalytics AI is an end-to-end multimodal system that evaluates speaking performance from recorded videos using **Computer Vision, Audio Signal Processing, and NLP**.
 
 The system extracts structured features from visual presence, vocal delivery, and language quality, then generates a quantified performance score with improvement insights.
 
