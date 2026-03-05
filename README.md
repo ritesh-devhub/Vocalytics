@@ -101,66 +101,69 @@ Interactive charts include:
 # 🧠 AI Processing Pipeline
 
 Vocalytics processes speech through a **multi-stage AI pipeline**.
-Final Confidence Score =
-(Visual Score × 0.35) +
-(Audio Score × 0.35) +
-(Language Score × 0.30)
-
-
-The weights are designed to reflect the relative importance of:
-
-- visual engagement
-- vocal delivery
-- linguistic clarity
-
----
-
-## Score Interpretation
-
-| Score | Performance Level |
-|------|------------------|
-| 0 – 39 | Finding Your Voice |
-| 40 – 54 | Growing Confidence |
-| 55 – 69 | Clear & Confident |
-| 70 – 84 | Strong Presence |
-| 85 – 100 | Next Level Confidence |
-
----
-
-## Feedback Generation
-
-Once the score is calculated, Vocalytics generates **structured improvement feedback**.
-
-Each recommendation includes:
-
-- Growth area
-- Why it matters
-- Practical improvement suggestion
-
-This transforms raw analytics into **actionable communication coaching**.
-
----
-
-## Example Output
-
-
-Overall Score: 74
-Performance Level: Strong Presence
-
-Growth Areas:
-
-• Maintain stronger eye contact
-• Improve speaking pace consistency
-• Simplify sentence structure
+Video Input
+│
+├── Frame Extraction
+│
+├── Visual Analysis (MediaPipe)
+│ ├ Eye Contact
+│ ├ Posture
+│ └ Engagement
+│
+├── Audio Extraction
+│
+├── Speech Recognition (Whisper)
+│ └ Transcription
+│
+├── NLP Analysis
+│ ├ Sentence Flow
+│ ├ Language Clarity
+│ └ Speech Structure
+│
+├── Audio Analysis
+│ ├ Speaking Pace
+│ ├ Pause Patterns
+│ └ Delivery Quality
+│
+└── Final Confidence Score
+│
+└ AI Feedback Report
 
 
 ---
 
-## Design Goal
-
-The goal of Vocalytics is not only to **measure speaking performance**, but also to **guide improvement through clear insights**.
-
-The system acts as a lightweight **AI communication coach** for speakers, presenters, and professio
+# 🧩 Project Architecture
+Vocalytics
+│
+├── app.py
+│
+├── backend
+│ ├── audio_analyzer.py
+│ ├── visual_analyzer.py
+│ ├── nlp_analyzer.py
+│ ├── scorer.py
+│ ├── feedback.py
+│ ├── video_processor.py
+│ └── utils.py
+│
+├── ui
+│ ├── hero.py
+│ ├── upload_section.py
+│ ├── trust_bar.py
+│ ├── pipeline_execution.py
+│ ├── dashboard.py
+│ └── sidebar.py
+│
+├── assets
+│ ├── icons
+│ ├── logos
+│ ├── mascot
+│ └── screenshots
+│
+├── styles
+│ └── css.py
+│
+└── requirements.txt
 
 # 🧠 AI Scoring Methodology
 
@@ -277,3 +280,129 @@ Growth Areas:
 The goal of Vocalytics is not only to **measure speaking performance**, but also to **guide improvement through clear insights**.
 
 The system acts as a lightweight **AI communication coach** for speakers, presenters, and professionals.
+
+
+---
+
+# ⚙️ Tech Stack
+
+### Frontend
+- Streamlit
+- Custom CSS Styling
+- Interactive Charts (Plotly)
+
+### AI & ML
+- MediaPipe
+- OpenAI Whisper
+- Scikit-learn
+- Librosa
+
+### Video & Audio Processing
+- OpenCV
+- FFmpeg
+- NumPy
+
+### Data Analysis
+- Pandas
+- SciPy
+
+---
+# 🛠️ Installation
+
+### 1️⃣ Clone Repository
+
+
+git clone https://github.com/yourusername/Vocalytics.git
+
+cd Vocalytics
+
+
+---
+
+### 2️⃣ Create Virtual Environment
+
+
+python3 -m venv venv
+source venv/bin/activate
+---
+
+### 3️⃣ Install Dependencies
+
+
+pip install -r requirements.txt
+
+
+---
+
+### 4️⃣ Install FFmpeg
+
+**Mac**
+
+
+brew install ffmpeg
+
+
+**Linux**
+
+
+sudo apt install ffmpeg
+
+
+---
+
+### 5️⃣ Run the Application
+
+
+streamlit run app.py
+
+
+---
+
+# 📈 Future Enhancements
+
+- Multi-video progress tracking
+- Historical performance dashboard
+- AI coaching recommendations
+- Real-time speaking feedback
+- Emotion and sentiment detection
+- Gesture analysis
+
+---
+
+# 📌 Use Cases
+
+Vocalytics can be used for:
+
+- Public speaking improvement
+- Interview preparation
+- Presentation training
+- Sales pitch analysis
+- Communication coaching
+
+---
+
+# 👨‍💻 Author
+
+**Ritesh**
+
+AI/ML Engineer | Data Scientist  
+
+LinkedIn  
+[(LinkedIn)](https://www.linkedin.com/in/ritesh-ai/)
+
+GitHub  
+[(GitHub)](https://github.com/ritesh-devhub)
+
+---
+
+# ⭐ Support
+
+If you find this project useful, consider giving it a **star ⭐**.
+
+It helps the project reach more developers.
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
