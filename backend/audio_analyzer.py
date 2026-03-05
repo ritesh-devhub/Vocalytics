@@ -1,7 +1,7 @@
 import librosa
 import numpy as np
 from pathlib import Path
-from video_processor import AUDIO_DIR
+from backend.video_processor import AUDIO_DIR
 
 # BASIC
 def load_audio(audio_path):
