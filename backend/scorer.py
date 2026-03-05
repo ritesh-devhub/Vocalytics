@@ -1,4 +1,4 @@
-from feedback import generate_feedback
+from backend.feedback import generate_feedback
 
 
 def compute_visual_score(v):
