@@ -1,0 +1,15 @@
+streamlit
+plotly
+numpy
+pandas
+opencv-python
+opencv-contrib-python
+mediapipe==0.10.9
+librosa
+openai-whisper
+torch>=2.0
+scikit-learn
+scipy
+soundfile
+tqdm
+regex
