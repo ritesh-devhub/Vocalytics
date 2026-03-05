@@ -52,6 +52,7 @@ The dashboard presents a **confidence score**, **performance breakdown**, and **
 <!-- ADD RADAR CHART SCREENSHOT -->
 
 ![Radar Chart](assets/ui-radar.png)
+![Bar Chart](assets/ui-bar.png)
 
 Interactive charts visualize the user's performance across key communication dimensions.
 
