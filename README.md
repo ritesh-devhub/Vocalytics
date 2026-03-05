@@ -1,87 +1,103 @@
-# 🎤 Vocalytics
-### Multimodal AI-Powered Speaking Performance Analyzer
+# 🎙️ Vocalytics  
+### Speech Intelligence, Powered by AI
 
-Vocalytics AI is an end-to-end multimodal system that evaluates speaking performance from recorded videos using **Computer Vision, Audio Signal Processing, and NLP**.
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
+![AI](https://img.shields.io/badge/AI-Speech%20Analytics-purple)
+![Status](https://img.shields.io/badge/Project-Active-success)
 
-The system extracts structured features from visual presence, vocal delivery, and language quality, then generates a quantified performance score with improvement insights.
+Vocalytics is an **AI-powered speech analysis platform** that evaluates communication performance from video recordings.
 
----
+The system analyzes **visual presence, vocal delivery, and language structure** to generate a **confidence score and actionable feedback**.
 
-## 🚀 What It Does
-
-Upload a speaking video → AI analyzes:
-
-- 🎥 **Visual Signals**  
-  Posture stability, eye contact, gesture frequency, facial confidence  
-
-- 🎙️ **Vocal Delivery**  
-  Words per minute, pitch variation, pause detection, volume consistency  
-
-- 🧠 **Language Quality**  
-  Filler words, vocabulary richness, lexical diversity, sentence structure  
-
-Outputs:
-- Visual Score  
-- Vocal Score  
-- Language Score  
-- Overall Speaking Score  
-- Structured JSON performance report  
+It transforms speech into **measurable performance insights** to help users improve public speaking, presentations, and interviews.
 
 ---
 
-## 🧠 Why This Project Stands Out
+# 🚀 Demo
 
-- Integrates **CV + Audio ML + NLP** in one system  
-- Feature-engineered, explainable scoring logic  
-- Modular backend architecture  
-- Designed for scalability and SaaS deployment  
-- Demonstrates full AI pipeline integration  
+### 🎬 Application Walkthrough
 
-This project showcases real-world AI engineering beyond isolated model training.
+<!-- ADD A SHORT GIF HERE -->
+<!-- Example: uploading video → analysis → dashboard -->
 
----
-
-## 🏗️ Architecture Overview
-
-Video → Frame & Audio Extraction →  
-Visual Analyzer + Audio Analyzer + NLP Analyzer →  
-Feature Aggregation → Scoring Engine → Report Generation  
+![App Demo](assets/demo.gif)
 
 ---
 
-## 🛠 Tech Stack
+# 🖥️ Application Interface
 
-- Python  
-- OpenCV  
-- MediaPipe  
-- Librosa  
-- Whisper (Speech-to-Text)  
-- spaCy  
-- FastAPI (planned API layer)  
+### Upload & Analysis Interface
 
----
+<!-- ADD SCREENSHOT OF MAIN PAGE -->
 
-## 🎯 Use Cases
+![Upload Interface](assets/ui-upload.png)
 
-- Interview preparation  
-- Public speaking improvement  
-- Communication skill tracking  
-- Corporate training analytics  
+Users can upload a speaking video and receive an **AI-generated performance report**.
 
 ---
 
-## 📌 Development Status
+### AI Performance Dashboard
 
-- ✅ Video processing pipeline  
-- ✅ Frame extraction  
-- ✅ Audio extraction  
-- 🔄 Visual feature engineering  
-- 🔄 Audio feature extraction  
-- 🔜 NLP module integration  
-- 🔜 Scoring refinement & deployment  
+<!-- ADD DASHBOARD SCREENSHOT -->
+
+![Dashboard](assets/ui-dashboard.png)
+
+The dashboard presents a **confidence score**, **performance breakdown**, and **growth insights**.
 
 ---
 
-## 📈 Vision
+### Performance Visualization
 
-To build a data-driven AI speech coach that transforms subjective speaking feedback into measurable, trackable performance intelligence.
+<!-- ADD RADAR CHART SCREENSHOT -->
+
+![Radar Chart](assets/ui-radar.png)
+
+Interactive charts visualize the user's performance across key communication dimensions.
+
+---
+
+# ✨ Key Features
+
+### 🎥 Video-Based Analysis
+Upload a speaking video and receive AI-generated insights.
+
+### 👁️ Visual Presence Detection
+Analyzes:
+
+- Eye contact
+- Head posture
+- Facial engagement
+- Camera presence
+
+### 🎙️ Audio Delivery Analysis
+Evaluates:
+
+- Speaking pace
+- Vocal clarity
+- Pauses
+- Speech rhythm
+
+### 💬 Language Structure Intelligence
+NLP models analyze:
+
+- Sentence complexity
+- Language flow
+- Verbal clarity
+- Communication structure
+
+### 📊 Confidence Scoring System
+Combines multiple AI signals into a **single performance score**.
+
+### 📈 Performance Visualization
+Interactive charts include:
+
+- Radar performance chart
+- Score breakdown bars
+- Growth insights dashboard
+
+---
+
+# 🧠 AI Processing Pipeline
+
+Vocalytics processes speech through a **multi-stage AI pipeline**.
