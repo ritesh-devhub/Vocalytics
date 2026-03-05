@@ -14,7 +14,7 @@ It transforms speech into **measurable performance insights** to help users impr
 
 ---
 
-# 🚀 Demo
+## 🚀 Demo
 
 ### 🎬 Application Walkthrough
 
@@ -25,7 +25,7 @@ It transforms speech into **measurable performance insights** to help users impr
 
 ---
 
-# 🖥️ Application Interface
+## 🖥️ Application Interface
 
 ### Upload & Analysis Interface
 
@@ -57,14 +57,13 @@ Interactive charts visualize the user's performance across key communication dim
 
 ---
 
-# ✨ Key Features
+## ✨ Key Features
 
 ### 🎥 Video-Based Analysis
 Upload a speaking video and receive AI-generated insights.
 
 ### 👁️ Visual Presence Detection
 Analyzes:
-
 - Eye contact
 - Head posture
 - Facial engagement
@@ -72,7 +71,6 @@ Analyzes:
 
 ### 🎙️ Audio Delivery Analysis
 Evaluates:
-
 - Speaking pace
 - Vocal clarity
 - Pauses
@@ -80,7 +78,6 @@ Evaluates:
 
 ### 💬 Language Structure Intelligence
 NLP models analyze:
-
 - Sentence complexity
 - Language flow
 - Verbal clarity
@@ -91,81 +88,87 @@ Combines multiple AI signals into a **single performance score**.
 
 ### 📈 Performance Visualization
 Interactive charts include:
-
 - Radar performance chart
 - Score breakdown bars
 - Growth insights dashboard
 
 ---
 
-# 🧠 AI Processing Pipeline
+## 🧠 AI Processing Pipeline
 
 Vocalytics processes speech through a **multi-stage AI pipeline**.
+
+```
 Video Input
 │
 ├── Frame Extraction
 │
 ├── Visual Analysis (MediaPipe)
-│ ├ Eye Contact
-│ ├ Posture
-│ └ Engagement
+│   ├── Eye Contact
+│   ├── Posture
+│   └── Engagement
 │
 ├── Audio Extraction
 │
 ├── Speech Recognition (Whisper)
-│ └ Transcription
+│   └── Transcription
 │
 ├── NLP Analysis
-│ ├ Sentence Flow
-│ ├ Language Clarity
-│ └ Speech Structure
+│   ├── Sentence Flow
+│   ├── Language Clarity
+│   └── Speech Structure
 │
 ├── Audio Analysis
-│ ├ Speaking Pace
-│ ├ Pause Patterns
-│ └ Delivery Quality
+│   ├── Speaking Pace
+│   ├── Pause Patterns
+│   └── Delivery Quality
 │
 └── Final Confidence Score
-│
-└ AI Feedback Report
-
+    │
+    └── AI Feedback Report
+```
 
 ---
 
-# 🧩 Project Architecture
-Vocalytics
+## 🧩 Project Architecture
+
+```
+Vocalytics/
 │
 ├── app.py
 │
-├── backend
-│ ├── audio_analyzer.py
-│ ├── visual_analyzer.py
-│ ├── nlp_analyzer.py
-│ ├── scorer.py
-│ ├── feedback.py
-│ ├── video_processor.py
-│ └── utils.py
+├── backend/
+│   ├── audio_analyzer.py
+│   ├── visual_analyzer.py
+│   ├── nlp_analyzer.py
+│   ├── scorer.py
+│   ├── feedback.py
+│   ├── video_processor.py
+│   └── utils.py
 │
-├── ui
-│ ├── hero.py
-│ ├── upload_section.py
-│ ├── trust_bar.py
-│ ├── pipeline_execution.py
-│ ├── dashboard.py
-│ └── sidebar.py
+├── ui/
+│   ├── hero.py
+│   ├── upload_section.py
+│   ├── trust_bar.py
+│   ├── pipeline_execution.py
+│   ├── dashboard.py
+│   └── sidebar.py
 │
-├── assets
-│ ├── icons
-│ ├── logos
-│ ├── mascot
-│ └── screenshots
+├── assets/
+│   ├── icons/
+│   ├── logos/
+│   ├── mascot/
+│   └── screenshots/
 │
-├── styles
-│ └── css.py
+├── styles/
+│   └── css.py
 │
 └── requirements.txt
+```
 
-# 🧠 AI Scoring Methodology
+---
+
+## 🧠 AI Scoring Methodology
 
 Vocalytics converts multiple communication signals into a single **Confidence Score (0–100)**.
 
@@ -173,13 +176,10 @@ The scoring model combines **visual, vocal, and linguistic signals** extracted f
 
 ---
 
-## Feature Categories
-
 ### 👁 Visual Signals
 Computer vision models analyze speaker presence and engagement.
 
-Examples:
-
+**Examples:**
 - Eye contact consistency
 - Head stability
 - Facial engagement
@@ -192,8 +192,7 @@ These signals estimate how confidently the speaker appears on camera.
 ### 🎙 Audio Signals
 Speech delivery is evaluated using acoustic analysis.
 
-Key metrics include:
-
+**Key metrics include:**
 - Speaking pace (words per minute)
 - Pause frequency
 - Vocal rhythm consistency
@@ -206,8 +205,7 @@ This stage evaluates **how the speaker sounds**.
 ### 💬 Language Signals
 Natural Language Processing analyzes the **structure of speech**.
 
-Examples:
-
+**Examples:**
 - Sentence complexity
 - Clarity of phrasing
 - Idea progression
@@ -217,41 +215,41 @@ This measures **how effectively ideas are communicated**.
 
 ---
 
-## Scoring Formula
+### 📐 Scoring Formula
 
 Each category contributes to the final score:
-Final Confidence Score =
-(Visual Score × 0.35) +
-(Audio Score × 0.35) +
-(Language Score × 0.30)
 
+```
+Final Confidence Score = 
+    (Visual Score × 0.35) + 
+    (Audio Score × 0.35) + 
+    (Language Score × 0.30)
+```
 
 The weights are designed to reflect the relative importance of:
-
-- visual engagement
-- vocal delivery
-- linguistic clarity
-
----
-
-## Score Interpretation
-
-| Score | Performance Level |
-|------|------------------|
-| 0 – 39 | Finding Your Voice |
-| 40 – 54 | Growing Confidence |
-| 55 – 69 | Clear & Confident |
-| 70 – 84 | Strong Presence |
-| 85 – 100 | Next Level Confidence |
+- Visual engagement
+- Vocal delivery
+- Linguistic clarity
 
 ---
 
-## Feedback Generation
+### 📊 Score Interpretation
+
+| Score Range | Performance Level |
+|-------------|-------------------|
+| 0 – 39      | Finding Your Voice |
+| 40 – 54     | Growing Confidence |
+| 55 – 69     | Clear & Confident |
+| 70 – 84     | Strong Presence |
+| 85 – 100    | Next Level Confidence |
+
+---
+
+### 💡 Feedback Generation
 
 Once the score is calculated, Vocalytics generates **structured improvement feedback**.
 
 Each recommendation includes:
-
 - Growth area
 - Why it matters
 - Practical improvement suggestion
@@ -260,149 +258,183 @@ This transforms raw analytics into **actionable communication coaching**.
 
 ---
 
-## Example Output
+### 📋 Example Output
 
-
+```
 Overall Score: 74
 Performance Level: Strong Presence
 
 Growth Areas:
-
 • Maintain stronger eye contact
 • Improve speaking pace consistency
 • Simplify sentence structure
-
+```
 
 ---
 
-## Design Goal
+### 🎯 Design Goal
 
 The goal of Vocalytics is not only to **measure speaking performance**, but also to **guide improvement through clear insights**.
 
 The system acts as a lightweight **AI communication coach** for speakers, presenters, and professionals.
 
-
 ---
 
-# ⚙️ Tech Stack
+## ⚙️ Tech Stack
 
 ### Frontend
-- Streamlit
-- Custom CSS Styling
-- Interactive Charts (Plotly)
+- **Streamlit** - Web framework
+- **Custom CSS** - Styling
+- **Plotly** - Interactive charts
 
 ### AI & ML
-- MediaPipe
-- OpenAI Whisper
-- Scikit-learn
-- Librosa
+- **MediaPipe** - Visual analysis
+- **OpenAI Whisper** - Speech recognition
+- **Scikit-learn** - ML algorithms
+- **Librosa** - Audio processing
 
 ### Video & Audio Processing
-- OpenCV
-- FFmpeg
-- NumPy
+- **OpenCV** - Video processing
+- **FFmpeg** - Media conversion
+- **NumPy** - Numerical operations
 
 ### Data Analysis
-- Pandas
-- SciPy
+- **Pandas** - Data manipulation
+- **SciPy** - Scientific computing
 
 ---
-# 🛠️ Installation
+
+## 🛠️ Installation
 
 ### 1️⃣ Clone Repository
 
-
+```bash
 git clone https://github.com/yourusername/Vocalytics.git
-
 cd Vocalytics
-
+```
 
 ---
 
 ### 2️⃣ Create Virtual Environment
 
-
+```bash
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
 ---
 
 ### 3️⃣ Install Dependencies
 
-
+```bash
 pip install -r requirements.txt
-
+```
 
 ---
 
 ### 4️⃣ Install FFmpeg
 
-**Mac**
-
-
+**macOS:**
+```bash
 brew install ffmpeg
+```
 
-
-**Linux**
-
-
+**Linux (Ubuntu/Debian):**
+```bash
 sudo apt install ffmpeg
+```
 
+**Windows:**
+Download from [ffmpeg.org](https://ffmpeg.org/download.html) and add to PATH
 
 ---
 
 ### 5️⃣ Run the Application
 
-
+```bash
 streamlit run app.py
+```
 
-
----
-
-# 📈 Future Enhancements
-
-- Multi-video progress tracking
-- Historical performance dashboard
-- AI coaching recommendations
-- Real-time speaking feedback
-- Emotion and sentiment detection
-- Gesture analysis
+The app will open in your browser at `http://localhost:8501`
 
 ---
 
-# 📌 Use Cases
+## 📈 Future Enhancements
+
+- [ ] Multi-video progress tracking
+- [ ] Historical performance dashboard
+- [ ] AI coaching recommendations
+- [ ] Real-time speaking feedback
+- [ ] Emotion and sentiment detection
+- [ ] Gesture analysis
+- [ ] Multi-language support
+- [ ] Custom scoring weights
+
+---
+
+## 📌 Use Cases
 
 Vocalytics can be used for:
 
-- Public speaking improvement
-- Interview preparation
-- Presentation training
-- Sales pitch analysis
-- Communication coaching
+✅ **Public speaking improvement**  
+✅ **Interview preparation**  
+✅ **Presentation training**  
+✅ **Sales pitch analysis**  
+✅ **Communication coaching**  
+✅ **Content creator evaluation**  
+✅ **Professional development**
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
-**Ritesh**
+**Ritesh**  
+*AI/ML Engineer | Data Scientist*
 
-AI/ML Engineer | Data Scientist  
-
-LinkedIn  
-[(LinkedIn)](https://www.linkedin.com/in/ritesh-ai/)
-
-GitHub  
-[(GitHub)](https://github.com/ritesh-devhub)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/ritesh-ai/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat&logo=github)](https://github.com/ritesh-devhub)
 
 ---
 
-# ⭐ Support
+## ⭐ Support
 
-If you find this project useful, consider giving it a **star ⭐**.
+If you find this project useful, consider giving it a **star ⭐**
 
-It helps the project reach more developers.
+It helps the project reach more developers and improve the AI community.
 
 ---
 
-# 📜 License
+## 🤝 Contributing
 
-This project is licensed under the **MIT License**.
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- OpenAI for Whisper ASR
+- Google MediaPipe team
+- Streamlit community
+- All contributors and supporters
+
+---
+
+<div align="center">
+
+**Made with ❤️ by Ritesh**
+
+*Transforming speech into insights, one video at a time*
+
+</div>
