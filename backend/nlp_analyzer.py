@@ -1,5 +1,5 @@
 import whisper
-from video_processor import AUDIO_DIR
+from backend.video_processor import AUDIO_DIR
 from pathlib import Path
 import re
 
