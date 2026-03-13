@@ -3,13 +3,15 @@ from backend.video_processor import AUDIO_DIR
 from pathlib import Path
 import re
 
-model = WhisperModel("base")
+model = WhisperModel("base", device="cpu", compute_type="int8")
 
 def transcribe_audio(video_filename):
     video_path = Path(video_filename)
     audio_path = Path(AUDIO_DIR) / f"{video_path.stem}/audio.wav"
-    result = model.transcribe(str(audio_path))
-    return(result["text"])
+    #result = model.transcribe(str(audio_path))
+    segments, info = model.transcribe(str(audio_path))
+    return " ".join(segment.text for segment in segments)
+    #return(result["text"])
 
 
 # Filler words 
