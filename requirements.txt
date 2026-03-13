@@ -5,8 +5,7 @@ pandas
 opencv-contrib-python-headless
 mediapipe==0.10.9
 librosa
-setuptools
-openai-whisper==20231117
+openai-whisper @ https://github.com/openai/whisper/archive/refs/tags/v20231117.zip
 torch>=2.0
 scikit-learn
 scipy
