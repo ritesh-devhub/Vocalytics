@@ -1,3 +1,4 @@
 python3-pkg-resources
 libgl1
 libglib2.0-0t64
+ffmpeg

@@ -7,7 +7,7 @@ def render_upload():
     with container:
         container.text("Upload your speaking video")
         uploaded_file = container.file_uploader(
-            "",
+            "upload your video",
             type=["mp4"],
             label_visibility="collapsed"
         )
