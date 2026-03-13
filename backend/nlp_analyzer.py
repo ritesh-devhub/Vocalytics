@@ -1,9 +1,9 @@
-import whisper
+from faster_whisper import WhisperModel
 from backend.video_processor import AUDIO_DIR
 from pathlib import Path
 import re
 
-model = whisper.load_model("base")
+model = WhisperModel("base")
 
 def transcribe_audio(video_filename):
     video_path = Path(video_filename)
